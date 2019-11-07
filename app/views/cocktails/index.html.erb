@@ -1,10 +1,19 @@
-<h1>Cocktails</h1>
+<div class="home-banner" >
+    <h1 >Lala's Little Nugget</h1>
+    <h3 >Create your own Cocktails.</h3>
+</div>
 
-<ul class="recipe-card">
+<div class="card-category">
 <% @cocktails.each do |cocktail| %>
-<li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body"><%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+</div>
 <%end%>
-</ul>
+</div>
 
-<p id="add-link">
+<div class="link-container">
+<p>
   <%= link_to 'Add new cocktail', new_cocktail_path %></p>
+</div>

@@ -1,6 +1,8 @@
 <div class="home-banner" >
     <h1 >Lala's Little Nugget</h1>
     <h3 >Create your own Cocktails.</h3>
+    <p> <button type="button" class="btn btn-light">
+      <%= link_to 'Add a new cocktail', new_cocktail_path %></button></p>
 </div>
 
 <div class="card-category">
@@ -11,9 +13,4 @@
       </div>
 </div>
 <%end%>
-</div>
-
-<div class="link-container">
-<p>
-  <%= link_to 'Add new cocktail', new_cocktail_path %></p>
 </div>

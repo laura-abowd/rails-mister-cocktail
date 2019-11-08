@@ -1,3 +1,9 @@
+<nav class="navbar navbar-light bg-black">
+<%= link_to cocktails_path do %> <i class="fas fa-glass-martini-alt"></i>
+  <%end%>
+</nav>
+
+
 <div class="home-banner" >
     <h1 >Lala’s Little Nugget</h1>
     <h3 >Create your own Cocktails.</h3>
@@ -5,12 +11,10 @@
       <%= link_to 'Add a new cocktail', new_cocktail_path %></button></p>
 </div>
 
-
-
 <div class="card-category">
 <% @cocktails.each do |cocktail| %>
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <%= cl_image_tag cocktail.photo, class: "card-img-top" %>
   <div class="card-body"><%= link_to cocktail.name, cocktail_path(cocktail) %>
       </div>
 </div>

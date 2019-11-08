@@ -1,5 +1,7 @@
-
-<p><%= link_to 'Back Home', cocktails_path %></p>
+<nav class="navbar navbar-light bg-light">
+  <%= link_to  cocktails_path do %> <i class="fas fa-glass-martini-alt"></i>
+  <%end%>
+</nav>
 
 <div class="container">
 <%= simple_form_for [@cocktail] do |f| %>

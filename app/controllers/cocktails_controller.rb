@@ -1,6 +1,7 @@
 class CocktailsController < ApplicationController
 
   def index
+    @class = 'bg-black'
     @cocktails = Cocktail.all
   end
 

@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'open-uri'
-require 'JSON'
+require 'json'
 
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 json = open(url).read
